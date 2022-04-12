@@ -35,7 +35,7 @@
         android:layout_width="fill_parent"
         android:layout_height="172dp"
         android:layout_marginTop="18dp"
-        android:layout_margin="18dp"
+        android:layout_margin="20dp"
         android:layout_centerInParent="true"
         android:background="@drawable/frame_1"
         android:clipToOutline="true">
@@ -45,11 +45,10 @@
             android:layout_width="250dp"
             android:layout_height="228dp"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="171dp"
             android:layout_alignParentTop="true"
+            android:layout_marginStart="171dp"
             android:layout_marginTop="-87dp"
-            android:background="@drawable/ellipse_1"
-            />
+            android:background="@drawable/ellipse_1" />
 
         <View
             android:id="@+id/ellipse_2"
@@ -68,8 +67,8 @@
             android:id="@+id/ellipse_3"
             android:layout_width="289dp"
             android:layout_height="289dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="-144dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="-144dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentBottom="true"
             android:layout_marginTop="60dp"
@@ -77,10 +76,79 @@
             android:background="@drawable/ellipse_3"
             />
 
+
+
         <RelativeLayout
             android:layout_margin="13dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="top"
+                android:text="Tn Thoriq"
+                android:textColor="#FAFAFA"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/vector1"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_below="@id/txt3"
+                android:background="@drawable/ic_baseline_person_24" />
+
+            <TextView
+                android:layout_below="@id/txt3"
+                android:layout_toEndOf="@id/vector1"
+                android:id="@+id/txt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-1dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="AB099"
+                android:textColor="#FAFAFA"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="top"
+                android:text="Total Point"
+                android:textColor="#FAFAFA"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_below="@id/txt5"
+                android:id="@+id/txt6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="top"
+                android:text="$ 676"
+                android:textColor="#A30016"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:layout_below="@id/vector1"
+                android:layout_marginTop="40dp"
+                android:id="@+id/porgbar_dash"
+                style="@style/MyProgressBarTwo"
+                android:theme="@style/MyProgressBarTwo"
+                android:progress="30"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:progressTint="#FFCB8E"
+                android:progressBackgroundTint="#D8FAFAFA"
+                />
+
 
         </RelativeLayout>
 
