@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="@drawable/ractangle_recycle"
+            android:layout_width="241dp"
+            android:layout_height="144dp">
+            
+            <ImageView
+                android:id="@+id/iv"
+                android:src="@drawable/blog"
+                android:layout_width="match_parent"
+                android:layout_height="101dp"/>
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="PMI Sleman: Ayo Donor,  kita seha..."
+                android:textColor="#151515"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="22 April 2022"
+                android:textSize="10sp" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
