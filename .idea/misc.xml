@@ -8,6 +8,7 @@
         <entry key="..\:/Amikom/Semester 6/KWU/bloodbags/app/src/main/res/drawable/ellipse_2.xml" value="0.1" />
         <entry key="..\:/Amikom/Semester 6/KWU/bloodbags/app/src/main/res/drawable/ellipse_3.xml" value="0.1" />
         <entry key="..\:/Amikom/Semester 6/KWU/bloodbags/app/src/main/res/drawable/frame_1.xml" value="0.1" />
+        <entry key="..\:/Amikom/Semester 6/KWU/bloodbags/app/src/main/res/drawable/ic_back.xml" value="0.1475" />
         <entry key="..\:/Amikom/Semester 6/KWU/bloodbags/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1465" />
         <entry key="..\:/Amikom/Semester 6/KWU/bloodbags/app/src/main/res/drawable/ic_donor.xml" value="0.1035" />
         <entry key="..\:/Amikom/Semester 6/KWU/bloodbags/app/src/main/res/drawable/ic_ellipse_1.xml" value="0.1465" />
@@ -20,7 +21,9 @@
         <entry key="..\:/Amikom/Semester 6/KWU/bloodbags/app/src/main/res/drawable/test.xml" value="0.1035" />
         <entry key="..\:/Amikom/Semester 6/KWU/bloodbags/app/src/main/res/layout-v31/activity_main.xml" value="0.1" />
         <entry key="..\:/Amikom/Semester 6/KWU/bloodbags/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Amikom/Semester 6/KWU/bloodbags/app/src/main/res/layout/recycler_item.xml" value="0.5242105263157895" />
+        <entry key="..\:/Amikom/Semester 6/KWU/bloodbags/app/src/main/res/layout/activity_stok1.xml" value="0.209375" />
+        <entry key="..\:/Amikom/Semester 6/KWU/bloodbags/app/src/main/res/layout/item_stokrs.xml" value="0.33" />
+        <entry key="..\:/Amikom/Semester 6/KWU/bloodbags/app/src/main/res/layout/recycler_item.xml" value="0.5150602409638554" />
         <entry key="..\:/Amikom/Semester 6/KWU/bloodbags/app/src/main/res/menu/navbar.xml" value="0.209375" />
         <entry key="..\:/Amikom/Semester 6/KWU/bloodbags/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.197" />
       </map>

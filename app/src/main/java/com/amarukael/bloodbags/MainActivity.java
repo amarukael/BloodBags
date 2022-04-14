@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.nav_bottom);
+        bottomNavigationView.setSelectedItemId(R.id.nav_home);
 
         RecyclerView recyclerView = findViewById(R.id.recycler);
 

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    tools:context=".Stok1Activity">
+
+    <View
+        android:id="@+id/but_back"
+        android:layout_width="16dp"
+        android:layout_height="26dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/ic_back"
+        />
+    <View
+        android:layout_width="24.22dp"
+        android:layout_height="24.22dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_reload"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/but_back"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Stok Darah Terdekat"
+        android:textColor="@color/red_prim"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+
+
+
+
+</RelativeLayout>
