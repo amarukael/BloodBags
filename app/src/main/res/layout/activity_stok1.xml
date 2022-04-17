@@ -8,7 +8,6 @@
     android:layout_marginStart="20dp"
     android:layout_marginEnd="20dp"
     tools:context=".Stok1Activity">
-
     <View
         android:id="@+id/but_back"
         android:layout_width="16dp"
@@ -22,8 +21,9 @@
         android:layout_alignParentRight="true"
         android:background="@drawable/ic_reload"
         />
-
     <TextView
+        android:id="@+id/stokdarahterdekat"
+        android:layout_toRightOf="@id/but_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/but_back"
@@ -32,11 +32,13 @@
         android:text="Stok Darah Terdekat"
         android:textColor="@color/red_prim"
         android:textSize="20sp"
-        android:textStyle="bold" />
-
-
-
-
-
+        android:textStyle="bold"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/stokdarahterdekat"
+        android:id="@+id/stokrecycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
 
 </RelativeLayout>

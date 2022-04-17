@@ -10,7 +10,6 @@
             android:background="@drawable/item_stokrs"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
             <ImageView
                 android:id="@+id/img_rs"
                 android:layout_width="154dp"
@@ -20,14 +19,12 @@
                 android:background="@drawable/ractangle_img_rs"
                 android:clipToOutline="true"
                 android:src="@drawable/rs1" />
-
             <RelativeLayout
                 android:layout_centerVertical="true"
                 android:layout_marginStart="10dp"
                 android:layout_toRightOf="@id/img_rs"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
-
                 <TextView
                     android:id="@+id/txt_rs"
                     android:layout_width="wrap_content"
@@ -36,7 +33,6 @@
                     android:text="PMI Yogyakarta"
                     android:textColor="#171717"
                     android:textSize="18sp" />
-
                 <View
                     android:id="@+id/img_jlnrs"
                     android:layout_below="@id/txt_rs"
@@ -44,8 +40,8 @@
                     android:layout_height="11dp"
                     android:background="@drawable/ic_jln_rs"
                     />
-
                 <TextView
+                    android:layout_marginStart="3dp"
                     android:layout_marginTop="-3dp"
                     android:id="@+id/txt_jlnrs"
                     android:layout_width="wrap_content"
@@ -54,7 +50,6 @@
                     android:layout_toRightOf="@id/img_jlnrs"
                     android:text="text"
                     android:textSize="12sp" />
-
                 <View
                     android:id="@+id/img_jrkrs"
                     android:layout_marginTop="8dp"
@@ -64,6 +59,7 @@
                     android:background="@drawable/ic_jrk_rs"
                     />
                 <TextView
+                    android:layout_marginStart="3dp"
                     android:id="@+id/txt_jrkrs"
                     android:layout_marginTop="2dp"
                     android:textSize="12sp"
@@ -73,22 +69,36 @@
                     android:text="test"
                     android:layout_below="@id/txt_jlnrs"
                     />
-
                 <TextView
+                    android:layout_marginTop="2dp"
+                    android:textSize="12sp"
+                    android:layout_toRightOf="@id/txt_jrkrs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" KM"
+                    android:layout_below="@id/txt_jlnrs"
+                    />
+                <TextView
+                    android:id="@+id/stok"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/txt_jrkrs"
                     android:fontFamily="@font/poppins_medium"
-                    android:text="222 Stok"
+                    android:text="222"
                     android:textColor="@color/red_prim"
                     android:textSize="16sp"
                     android:textStyle="bold" />
-
+                <TextView
+                    android:layout_toRightOf="@id/stok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_jrkrs"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text=" Stok"
+                    android:textColor="@color/red_prim"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
             </RelativeLayout>
-
-
-
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
-
 </LinearLayout>
