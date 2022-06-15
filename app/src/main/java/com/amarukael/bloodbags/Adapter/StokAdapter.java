@@ -33,9 +33,9 @@ public class StokAdapter extends RecyclerView.Adapter<StokAdapter.StokHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull StokHolder holder, int position) {
-        holder.stok.setText(imageModelStok.get(position).getStok());
+        holder.stok.setText(String.valueOf(imageModelStok.get(position).getStok()));
         holder.namars.setText(imageModelStok.get(position).getNamars());
-        holder.jarakrs.setText(imageModelStok.get(position).getJarakrs());
+        holder.jarakrs.setText(String.valueOf(imageModelStok.get(position).getJarakrs()));
         holder.jalanrs.setText(imageModelStok.get(position).getJalanrs());
         holder.gambarrs.setImageResource(imageModelStok.get(position).getGambarrs());
     }

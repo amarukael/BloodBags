@@ -5,8 +5,12 @@ import androidx.appcompat.app.AppCompatDelegate;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.amarukael.bloodbags.Adapter.BlogdashAdapter;
 import com.amarukael.bloodbags.Model.BlogdashModel;
@@ -35,6 +39,16 @@ public class MainActivity extends AppCompatActivity {
         BlogdashAdapter adapter = new BlogdashAdapter(this, imageModelArrayList);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.HORIZONTAL, false));
+
+       LinearLayout clickstock = findViewById(R.id.stok);
+
+        clickstock.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Stok1Activity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 

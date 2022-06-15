@@ -19,7 +19,7 @@ public class Stok1Activity extends AppCompatActivity {
     int[] stok = new int[]{123, 234,345,456,567};
     String[] namars = new String[]{"PMI Yogyakarta","JIH Hospital","PMI Yogyakarta","JIH Hospital","PMI Yogyakarta"};
     String[] jalanrs = new String[]{"JL. Ring Road Utara...","JL. Ring Road Utara...","JL. Ring Road Utara...",
-            "JL. Ring Road Utara..."};
+            "JL. Ring Road Utara...","JL. Ring Road Utara..."};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +29,8 @@ public class Stok1Activity extends AppCompatActivity {
 
         RecyclerView recyclerView = findViewById(R.id.stokrecycler);
 
-        ArrayList<StokModel> imageModelArrayList = stok();
-        StokAdapter adapter = new StokAdapter(this, imageModelArrayList);
+        ArrayList<StokModel> imageModelStok = stok();
+        StokAdapter adapter = new StokAdapter(this, imageModelStok);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false));
     }
@@ -38,7 +38,7 @@ public class Stok1Activity extends AppCompatActivity {
     private ArrayList<StokModel> stok() {
         ArrayList<StokModel> list = new ArrayList<>();
 
-        for(int i = 0; i < 3; i++){
+        for(int i = 0; i < 5; i++){
             StokModel stokModel = new StokModel();
             stokModel.setNamars(namars[i]);
             stokModel.setStok(stok[i]);
