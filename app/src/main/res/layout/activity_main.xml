@@ -45,15 +45,9 @@
             android:layout_width="fill_parent"
             android:layout_height="172dp"
             android:layout_below="@+id/txt1"
-            android:clipToPadding="false"
+            android:background="@drawable/ractangle_frame"
+            android:clipToOutline="true"
             >
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/frame_1"
-                android:outlineProvider="bounds"
-                />
 
             <View
                 android:id="@+id/ellipse_1"
@@ -61,6 +55,7 @@
                 android:layout_height="141dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
+                android:clipToOutline="true"
                 android:background="@drawable/ic_ellipse_1" />
 
             <View
@@ -146,7 +141,7 @@
                     android:layout_marginTop="40dp"
                     android:progress="30"
                     android:progressBackgroundTint="#D8FAFAFA"
-                    android:progressTint="#FFCB8E"
+                    android:progressTint="#F44336"
                     android:theme="@style/MyProgressBarTwo" />
 
                 <TextView
