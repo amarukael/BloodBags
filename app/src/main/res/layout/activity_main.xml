@@ -10,14 +10,26 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="18dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="18dp"
+        android:layout_marginEnd="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="top"
+            android:text="Hi, Thoriq"
+            android:textColor="#000000"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_below="@id/txt1"
             android:id="@+id/txt2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -27,26 +39,15 @@
             android:textColor="#797979"
             android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/txt1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/txt2"
-            android:fontFamily="@font/poppins_medium"
-            android:gravity="top"
-            android:text="Hi, Thoriq"
-            android:textColor="#000000"
-            android:textSize="36sp"
-            android:textStyle="bold" />
-
         <RelativeLayout
             android:layout_margin="5dp"
             android:id="@+id/frame_1"
             android:layout_width="fill_parent"
             android:layout_height="172dp"
-            android:layout_below="@+id/txt1"
+            android:layout_below="@+id/txt2"
             android:background="@drawable/ractangle_frame"
             android:clipToOutline="true"
+            android:clipChildren="true"
             >
 
             <View
@@ -164,17 +165,19 @@
             android:layout_below="@id/frame_1"
             android:layout_centerInParent="true"
             android:clipToPadding="false"
-            android:padding="5dp">
+            android:paddingTop="10dp"
+            android:paddingHorizontal="10dp"
+            android:paddingBottom="20dp">
 
             <LinearLayout
                 android:id="@+id/donor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/ractangle_dash"
-                android:elevation="5dp"
+                android:elevation="10dp"
                 android:gravity="center"
-                android:orientation="vertical"
-                android:outlineProvider="bounds">
+                android:outlineProvider="bounds"
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -199,7 +202,7 @@
                 android:layout_marginEnd="5dp"
                 android:layout_toEndOf="@id/donor"
                 android:background="@drawable/ractangle_dash"
-                android:elevation="5dp"
+                android:elevation="10dp"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:outlineProvider="bounds">
@@ -225,7 +228,7 @@
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@id/stok"
                 android:background="@drawable/ractangle_dash"
-                android:elevation="5dp"
+                android:elevation="10dp"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:outlineProvider="bounds">

@@ -1,8 +1,13 @@
 package com.amarukael.bloodbags.Model;
 
 public class BlogdashModel {
-    private String name;
-    private int image_drawable;
+    private String name, date, image_drawable;
+
+    public BlogdashModel(String name, String date, String image_drawable) {
+        this.name = name;
+        this.date = date;
+        this.image_drawable = image_drawable;
+    }
 
     public String getName() {
         return name;
@@ -12,11 +17,19 @@ public class BlogdashModel {
         this.name = name;
     }
 
-    public int getImage_drawable() {
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getImage_drawable() {
         return image_drawable;
     }
 
-    public void setImage_drawable(int image_drawable) {
+    public void setImage_drawable(String image_drawable) {
         this.image_drawable = image_drawable;
     }
 }

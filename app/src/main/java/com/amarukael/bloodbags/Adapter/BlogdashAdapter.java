@@ -12,44 +12,47 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.amarukael.bloodbags.Model.BlogdashModel;
 import com.amarukael.bloodbags.R;
+import com.bumptech.glide.Glide;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class BlogdashAdapter extends RecyclerView.Adapter<BlogdashAdapter.MyViewHolder>{
-    private LayoutInflater inflater;
-    private ArrayList<BlogdashModel> imageModelArrayList;
+    Context context;
+    List<BlogdashModel> blogdashModels;
 
 
-    public BlogdashAdapter(Context ctx, ArrayList<BlogdashModel> imageModelArrayList){
+    public BlogdashAdapter(Context ctx, List<BlogdashModel> blogdashList){
 
-        inflater = LayoutInflater.from(ctx);
-        this.imageModelArrayList = imageModelArrayList;
+        this.context = ctx;
+        blogdashModels = blogdashList;
     }
 
     @NonNull
     @Override
     public BlogdashAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        View view = inflater.inflate(R.layout.recycler_item, parent, false);
-
+        View view = LayoutInflater.from(context).inflate(R.layout.recycler_item, parent, false);
         return new MyViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
+        BlogdashModel blogdashModel = blogdashModels.get(position);
 
-        holder.iv.setImageResource(imageModelArrayList.get(position).getImage_drawable());
-        holder.time.setText(imageModelArrayList.get(position).getName());
+        holder.time.setText(blogdashModel.getName());
+        holder.date.setText(blogdashModel.getDate());
+        Glide.with(context).load(blogdashModel.getImage_drawable()).into(holder.iv);
+
     }
 
     @Override
     public int getItemCount() {
-        return imageModelArrayList.size();
+        return blogdashModels.size();
     }
 
-    class MyViewHolder extends RecyclerView.ViewHolder{
+    static class MyViewHolder extends RecyclerView.ViewHolder{
 
-        TextView time;
+        TextView time,date;
         ImageView iv;
 
         public MyViewHolder(View itemView) {
@@ -57,6 +60,7 @@ public class BlogdashAdapter extends RecyclerView.Adapter<BlogdashAdapter.MyView
 
             time = itemView.findViewById(R.id.tv);
             iv = itemView.findViewById(R.id.iv);
+            date = itemView.findViewById(R.id.txdate);
         }
 
     }
