@@ -42,6 +42,7 @@ public class BlogdashAdapter extends RecyclerView.Adapter<BlogdashAdapter.MyView
         holder.time.setText(blogdashModel.getName());
         holder.date.setText(blogdashModel.getDate());
         Glide.with(context).load(blogdashModel.getImage_drawable()).into(holder.iv);
+        holder.iv.setClipToOutline(true);
 
     }
 

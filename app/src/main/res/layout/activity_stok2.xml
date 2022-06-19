@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Stok2Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/but_back"
+            android:layout_width="16dp"
+            android:layout_height="26dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ic_back"
+            />
+        <View
+            android:layout_width="24.22dp"
+            android:layout_height="24.22dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_reload"
+            />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/title_stok2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/but_back"
+            android:text="PMI Yogyakarta"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            />
+
+        <RatingBar
+            android:layout_marginTop="-7dp"
+            android:id="@+id/rating_stok2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_stok2"
+            android:rating="3.5"
+            android:scaleX=".5"
+            android:scaleY=".5"
+            android:transformPivotX="0dp"
+            android:transformPivotY="0dp"
+            android:isIndicator="true"
+            android:theme="@style/RatingBar"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="-30dp"
+            android:id="@+id/roundedmap_stock2"
+            android:clipChildren="true"
+            android:clipToOutline="true"
+            android:background="@drawable/roundedmap"
+            android:layout_below="@id/rating_stok2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:clipToOutline="true"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="center"
+                android:src="@drawable/maps"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgjlnrs_stok2"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/roundedmap_stock2"
+            android:src="@drawable/ic_jrk_rs"
+            android:layout_width="9dp"
+            android:layout_height="11dp"/>
+
+        <TextView
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="7dp"
+            android:textSize="11sp"
+            android:layout_below="@id/roundedmap_stock2"
+            android:layout_toRightOf="@id/imgjlnrs_stok2"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JL. Yogyakarta | 2 km"/>
+
+        <TextView
+            android:layout_marginEnd="10dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/red_prim"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:text="150 Stok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/roundedmap_stock2"/>
+
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:paddingTop="20dp"
+            android:paddingHorizontal="20dp"
+            android:background="@drawable/roundedmap"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/imgjlnrs_stok2"
+            android:layout_width="370dp"
+            android:layout_height="311dp">
+
+            <ImageView
+                android:id="@+id/icbandage_stok2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_bandage" />
+            <TextView
+                android:layout_marginStart="15dp"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_medium"
+                android:text="150 Stok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/icbandage_stok2"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/goldar_stok2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_below="@id/icbandage_stok2"
+                android:textSize="20sp"
+                android:text="Golongan Darah"
+                android:textColor="@color/black"
+                />
+
+            <RadioGroup
+                android:layout_marginTop="20dp"
+                android:id="@+id/radio_stok2"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_below="@id/goldar_stok2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:background="@drawable/radio_flat_selector"
+                    android:textColor="@color/radio_flat_text_selector"
+                    android:text="O"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:button="@android:color/transparent"
+                    android:checked="false"
+                    android:background="@drawable/radio_flat_selector"
+                    android:textColor="@color/radio_flat_text_selector"
+                    android:text="A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:button="@android:color/transparent"
+                    android:checked="false"
+                    android:background="@drawable/radio_flat_selector"
+                    android:textColor="@color/radio_flat_text_selector"
+                    android:text="B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:button="@android:color/transparent"
+                    android:checked="false"
+                    android:background="@drawable/radio_flat_selector"
+                    android:textColor="@color/radio_flat_text_selector"
+                    android:text="AB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RadioGroup>
+
+            <TextView
+                android:textColor="@color/red_prim"
+                android:paddingVertical="7dp"
+                android:paddingHorizontal="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/goldar_stok2"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ractangle_dotted"
+                android:text="22" />
+
+            <ImageView
+                android:id="@+id/line_stok2"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/radio_stok2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line"
+                />
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumlah"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="27sp"
+                android:layout_below="@id/line_stok2"
+                />
+
+            <ImageView
+                android:id="@+id/icplus_stok2"
+                android:layout_marginTop="12dp"
+                android:layout_below="@id/line_stok2"
+                android:src="@drawable/ic_plus"
+                android:layout_alignParentRight="true"
+                android:layout_width="24.47dp"
+                android:layout_height="25.13dp"/>
+            <TextView
+                android:layout_marginHorizontal="5dp"
+                android:id="@+id/count_stok2"
+                android:layout_toStartOf="@id/icplus_stok2"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="27sp"
+                android:layout_below="@id/line_stok2"
+                />
+            <ImageView
+                android:id="@+id/icmin_stok2"
+                android:layout_marginTop="12dp"
+                android:layout_below="@id/line_stok2"
+                android:src="@drawable/ic_min"
+                android:layout_toStartOf="@id/count_stok2"
+                android:layout_width="24.47dp"
+                android:layout_height="25.13dp"/>
+
+            <Button
+                android:textStyle="bold"
+                android:id="@+id/pesan_stok2"
+                android:layout_below="@id/count_stok2"
+                android:text="Pesan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

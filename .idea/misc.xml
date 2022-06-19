@@ -30,11 +30,23 @@
         <entry key="..\:/Amikom/Semester 6/KWU/bloodbags/app/src/main/res/layout/recycler_item.xml" value="0.4968421052631579" />
         <entry key="..\:/Amikom/Semester 6/KWU/bloodbags/app/src/main/res/menu/navbar.xml" value="0.209375" />
         <entry key="..\:/Amikom/Semester 6/KWU/bloodbags/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.197" />
+        <entry key="..\:/Users/grisel/Documents/BloodBags/app/src/main/res/drawable/buttonselector.xml" value="0.119" />
         <entry key="..\:/Users/grisel/Documents/BloodBags/app/src/main/res/drawable/frame_1.xml" value="0.119" />
+        <entry key="..\:/Users/grisel/Documents/BloodBags/app/src/main/res/drawable/line.xml" value="0.119" />
+        <entry key="..\:/Users/grisel/Documents/BloodBags/app/src/main/res/drawable/map.xml" value="0.1" />
+        <entry key="..\:/Users/grisel/Documents/BloodBags/app/src/main/res/drawable/maps.xml" value="0.1" />
+        <entry key="..\:/Users/grisel/Documents/BloodBags/app/src/main/res/drawable/ractangle_dotted.xml" value="0.119" />
         <entry key="..\:/Users/grisel/Documents/BloodBags/app/src/main/res/drawable/ractangle_frame.xml" value="0.119" />
-        <entry key="..\:/Users/grisel/Documents/BloodBags/app/src/main/res/layout/activity_main.xml" value="0.16" />
-        <entry key="..\:/Users/grisel/Documents/BloodBags/app/src/main/res/layout/item_stokrs.xml" value="0.12222222222222222" />
-        <entry key="..\:/Users/grisel/Documents/BloodBags/app/src/main/res/layout/recycler_item.xml" value="0.12222222222222222" />
+        <entry key="..\:/Users/grisel/Documents/BloodBags/app/src/main/res/drawable/radio_flat_regular.xml" value="0.119" />
+        <entry key="..\:/Users/grisel/Documents/BloodBags/app/src/main/res/drawable/radio_flat_selected.xml" value="0.119" />
+        <entry key="..\:/Users/grisel/Documents/BloodBags/app/src/main/res/drawable/radio_flat_selector.xml" value="0.119" />
+        <entry key="..\:/Users/grisel/Documents/BloodBags/app/src/main/res/drawable/roundedmap.xml" value="0.119" />
+        <entry key="..\:/Users/grisel/Documents/BloodBags/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/grisel/Documents/BloodBags/app/src/main/res/layout/activity_stock2.xml" value="0.1361111111111111" />
+        <entry key="..\:/Users/grisel/Documents/BloodBags/app/src/main/res/layout/activity_stok1.xml" value="0.1361111111111111" />
+        <entry key="..\:/Users/grisel/Documents/BloodBags/app/src/main/res/layout/activity_stok2.xml" value="0.3392857142857143" />
+        <entry key="..\:/Users/grisel/Documents/BloodBags/app/src/main/res/layout/item_stokrs.xml" value="0.2436548223350254" />
+        <entry key="..\:/Users/grisel/Documents/BloodBags/app/src/main/res/layout/recycler_item.xml" value="0.33" />
       </map>
     </option>
   </component>

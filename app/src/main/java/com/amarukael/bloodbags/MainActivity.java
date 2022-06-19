@@ -16,6 +16,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import org.apache.commons.lang3.StringUtils;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RequestQueue requestQueue;
     private List<BlogdashModel> blogdashModelList;
-    private static final String PATTERN_FORMAT = "dd-MM-yyyy";
+    private static final String PATTERN_FORMAT = "dd MMMM yyyy";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +56,15 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        requestQueue = VolleyClient.getmInstance(MainActivity.this).getRequestQueue();
+        blogdashModelList = new ArrayList<>();
+        fetchAricle();
+
+    }
+
     private void fetchAricle() {
         String url = "https://test-1.grisel0.repl.co";
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern(PATTERN_FORMAT)
@@ -67,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
                         for (int i = 0; i < 5; i++) {
                             JSONObject jsonObject = jsonArray.getJSONObject(i);
                             String title = jsonObject.getString("title");
+                            title = StringUtils.abbreviate(title, 35);
                             Instant instant = Instant.parse(jsonObject.getString("publishedAt"));
                             String date = formatter.format(instant);
                             String image = jsonObject.getString("urlToImage");
