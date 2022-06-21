@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Stok3Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <View
+            android:id="@+id/but_back"
+            android:layout_width="16dp"
+            android:layout_height="26dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ic_back"
+            />
+        <View
+            android:layout_width="24.22dp"
+            android:layout_height="24.22dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_reload"
+            />
+
+        <TextView
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:text="Daftar Pesanan"
+            android:id="@+id/stok3_daftarpesan"
+            android:layout_below="@id/but_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <RelativeLayout
+            android:id="@+id/stok3_list_aktif1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stok3_daftarpesan"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_stok3_aktif">
+
+            <ImageView
+                android:id="@+id/stok3_gambaraktif1"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/roundedmap"
+                android:src="@drawable/rs1" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="4dp"
+                android:layout_toEndOf="@id/stok3_gambaraktif1">
+
+                <TextView
+                    android:id="@+id/stok3_namars1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="PMI Yogyakarta"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/stok3_imgjlnrs1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/stok3_namars1"
+                    android:src="@drawable/ic_jln_rs" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/stok3_namars1"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="-3dp"
+                    android:layout_toEndOf="@id/stok3_imgjlnrs1"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="JL. Ringroad Utara"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:id="@+id/stok3_imgjrkrs1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/stok3_imgjlnrs1"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/ic_jrk_rs" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/stok3_imgjlnrs1"
+                    android:layout_marginStart="3dp"
+                    android:layout_toEndOf="@id/stok3_imgjrkrs1"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="2 Km"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="3dp">
+
+                <TextView
+                    android:textAlignment="center"
+                    android:id="@+id/stok3_goldar1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Golongan Darah : 0"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_marginTop="-3dp"
+                    android:id="@+id/stok3_kantong1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/stok3_goldar1"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="10 Kantong"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_marginTop="-5dp"
+                    android:id="@+id/stok3_buton_aktif1"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/stok3_kantong1"
+                    android:layout_centerInParent="true"
+                    android:text="tiket"
+                    android:textSize="7sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Riwayat Pesanan"
+            android:id="@+id/stok3_riwayatpesan"
+            android:layout_below="@id/stok3_list_aktif1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

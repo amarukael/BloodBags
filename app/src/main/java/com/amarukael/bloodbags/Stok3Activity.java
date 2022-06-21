@@ -6,21 +6,19 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Stok2Activity extends AppCompatActivity {
+public class Stok3Activity extends AppCompatActivity {
 
-    Button pesan;
+    Button tiket;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_stok2);
+        setContentView(R.layout.activity_stok3);
+        tiket = findViewById(R.id.stok3_buton_aktif1);
 
-        pesan = findViewById(R.id.pesan_stok2);
-
-        pesan.setOnClickListener(view -> {
-            Intent intent = new Intent(Stok2Activity.this, Stok3Activity.class);
+        tiket.setOnClickListener(view -> {
+            Intent intent = new Intent(Stok3Activity.this, TiketActivity.class);
             startActivity(intent);
         });
-
     }
 }

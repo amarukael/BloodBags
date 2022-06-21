@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void fetchAricle() {
-        String url = "https://test-1.grisel0.repl.co";
+        String url = "http://178.128.100.5:5000";
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern(PATTERN_FORMAT)
                 .withZone(ZoneId.systemDefault());
 
